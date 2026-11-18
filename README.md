@@ -19,23 +19,24 @@
 
 ## 2. Структура лабораторной работы
 
+```text
+phonebook/
 ├── .gitignore
 ├── CMakeLists.txt
 ├── README.md
 └── src/
-    ├── main.cpp                     # Точка входа и выбор хранилища
-    ├── core/                        # Основная логика (чистый C++)
-    │   ├── Contact.hpp              # Структуры Date, PhoneNumber и Contact
-    │   ├── Validator.hpp / .cpp     # Проверка полей через std::regex
-    │   ├── PhoneBook.hpp / .cpp     # Управление списком, поиск и сортировка
-    │   ├── IStorage.hpp             # Базовый интерфейс для хранилищ
-    │   ├── FileStorage.hpp / .cpp   # Работа с текстовым файлом (Задача 1)
-    │   └── DbStorage.hpp / .cpp     # Работа с PostgreSQL (Задача 2)
-    └── ui/                          # Интерфейс пользователя
-        ├── ConsoleUI.hpp / .cpp     # Консольное меню (Задача 1)
-        ├── MainWindow.hpp / .cpp    # Главное окно с QTableWidget (Задача 2)
+    ├── main.cpp                    # Точка входа и выбор хранилища
+    ├── core/                       # Основная логика (чистый C++)
+    │   ├── Contact.hpp             # Структуры Date, PhoneNumber и Contact
+    │   ├── Validator.hpp / .cpp    # Проверка полей через std::regex
+    │   ├── PhoneBook.hpp / .cpp    # Управление списком, поиск и сортировка
+    │   ├── IStorage.hpp            # Базовый интерфейс для хранилищ
+    │   ├── FileStorage.hpp / .cpp  # Работа с текстовым файлом (Задача 1)
+    │   └── DbStorage.hpp / .cpp    # Работа с PostgreSQL (Задача 2)
+    └── ui/                         # Интерфейс пользователя
+        ├── ConsoleUI.hpp / .cpp    # Консольное меню (Задача 1)
+        ├── MainWindow.hpp / .cpp   # Главное окно с QTableWidget (Задача 2)
         └── ContactDialog.hpp / .cpp # Окно добавления/редактирования (Задача 2)
-
 ```
 
 ---
